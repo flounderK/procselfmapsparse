@@ -1,0 +1,7 @@
+
+
+add_library(procselfmapsparse SHARED procselfmapsparse.c)
+target_compile_options(procselfmapsparse PRIVATE -fPIC)
+
+add_executable(testprocselfmapsparse testprocselfmapsparse.c)
+target_link_libraries(testprocselfmapsparse procselfmapsparse)
